@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <nav id="overlay">
+        <img src="images/close.svg" class="close-btn" id="close-menu" alt="">
+        <ul>
+            <li>
+                <a href="#">home</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#">about us</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#">services</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+            <li>
+                <a href="#">contact</a>
+                <span>hurry, get back to the choppa!</span>
+            </li>
+        </ul>
+    </nav>
+    
+    <header>
+        <a href="#" class="logo">mysite</a>
+
+        <img src="images/menu.svg" class="menu-btn" id="open-menu" alt="">
+    </header>
+
+    <section>
+        <h1>this is fancy</h1>
+    </section>
+
+
+    <script>
+        
+        var overlay     = document.getElementById('overlay');
+        var openMenu    = document.getElementById('open-menu');
+        var closeMenu   = document.getElementById('close-menu');
+
+        openMenu.addEventListener('click', function() {
+            overlay.classList.remove('close-menu');
+            overlay.classList.add('show-menu');
+        });
+
+        closeMenu.addEventListener('click', function() {
+            overlay.classList.add('close-menu');
+        });
+
+        
+    </script>
+
+
+
+</body>
+</html>
